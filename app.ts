@@ -1,13 +1,31 @@
-function getFullName(firstname: string, lastname:string): string {
-return `${firstname} ${lastname}`
+interface User {
+    firstname: string,
+    lastname: string,
+    city: string,
+    age: number,
+    isMarried: boolean,
 }
 
-getFullName('Olzhas', 'Khamzin');
+// type User = {
+//     firstname: string,
+//     lastname: string,
+//     city: string,
+//     age: number,
+//     isMarried: boolean,
+// }
 
-const getFullNameArrow = (firstname: string, lastname: string): string => {
-    return `${firstname} ${lastname}`
+function getFullName(userEntity: User): string {
+return `${userEntity.firstname} ${userEntity.lastname}`
 }
 
-const res = getFullNameArrow('Olzhas', 'Khamzin');
+const user = {
+    firstname: 'Olzhas',
+    lastname: 'Hamza',
+    city:'Kokshetau',
+    age: 32,
+    isMarried: true,
+}
+
+const res = getFullName(user);
 
 console.log('Fullname is', res);
