@@ -1,2 +1,6 @@
 "use strict";
-const a = 1;
+const skills = ['Dev', 'DevOps', 'Testing', 'FrontOps'];
+for (const skill of skills) {
+    console.log(skill);
+    ;
+}

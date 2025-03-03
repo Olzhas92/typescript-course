@@ -1,1 +1,5 @@
-const a = 1;
+const skills: string[] = ['Dev', 'DevOps', 'Testing', 'FrontOps'];
+
+for (const skill of skills) {
+    console.log(skill);;
+}
