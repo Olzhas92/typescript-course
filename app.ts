@@ -1,8 +1,11 @@
-const skill:[number, string] = [1, 'Dev'];
+const skill:readonly[number, string] = [1, 'Dev'];
 
-const [id, occupation] = skill;
+console.log(skill);
 
-console.log(id, occupation);
+const array:readonly number[] = [1,2,3,4,5];
 
-const occupations:[number, string, ...boolean[]] = [1, 'Dev', true, false, true];
-console.log(occupations);
+console.log(array);
+
+console.log('new array', array);
+
+const genericArray: ReadonlyArray<string> = ['Dev', 'DevOps'];

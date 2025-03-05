@@ -1,6 +1,6 @@
 "use strict";
 const skill = [1, 'Dev'];
-const [id, occupation] = skill;
-console.log(id, occupation);
-const occupations = [1, 'Dev', true, false, true];
-console.log(occupations);
+console.log(skill);
+const array = [1, 2, 3, 4, 5];
+console.log(array);
+console.log('new array', array);
